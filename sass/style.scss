@@ -1,0 +1,10 @@
+@import "helpers/variables";
+
+@import "helpers/reset";
+
+body{
+    font-family:$lato;
+}
+
+@import "components/menu";
+@import "components/main/main.scss";

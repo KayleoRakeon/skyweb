@@ -1,0 +1,14 @@
+main{
+    height:auto;
+    width:calc(100% - 60px);
+    float:right;
+    background:$w;
+
+    strong{
+        font-weight:$regular;
+    }
+
+    @import "intro.scss";
+    @import "activites.scss";
+    @import "temoignages.scss";
+}

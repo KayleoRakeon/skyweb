@@ -1,0 +1,75 @@
+.intro {
+    width: 100%;
+    height: auto;
+    background-image: url('../img/background-header.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    padding: $mXL 0;
+    box-sizing: border-box;
+
+    .margin {
+        width: 90%;
+        max-width: 1000px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        article {
+            width: 50%;
+        }
+
+        article:first-child {
+            h1 {
+                color: $w;
+                font-size: $fXL;
+                font-weight: $bold;
+            }
+
+            h2 {
+                color: $w;
+                font-size: $fM;
+                font-weight: $regular;
+                margin: 0 0 $mL 0;
+            }
+
+            a {
+                color: $bl;
+                font-size: $fS;
+                text-decoration: none;
+                background: $y;
+                padding: $mS $mM;
+                border-radius: 100px;
+            }
+
+            @media(max-width:$tablette) {
+                width: 60%;
+            }
+
+            @media(max-width:$mobile) {
+                width: 90%;
+                margin: auto;
+            }
+        }
+
+        article:last-child {
+            img {
+                width: 100%;
+            }
+
+            @media(max-width:$tablette) {
+                width: 40%;
+            }
+
+            @media(max-width:$mobile) {
+                display: none;
+            }
+        }
+
+        @media(max-width:$tablette) {
+            width: 90%;
+            margin: auto;
+        }
+    }
+}

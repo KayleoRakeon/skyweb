@@ -1,0 +1,98 @@
+.temoignages{
+    width:100%;
+    height:auto;
+    background-image:url('../img/background-temoignages.png');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:top center;
+    padding:$mXL 0 $mM 0;
+    box-sizing:border-box;
+
+    h3{
+        font-size:$fL;
+        color:$w;
+        text-align:center;
+    }
+
+    .margin{
+        width:90vw;
+        max-width:1000px;
+        margin:$mL auto 0 auto;
+        display:flex;
+        justify-content:space-between;
+        align-items:stretch;
+
+        article{
+            width:calc(100% / 3);
+            height:auto;
+            padding:$mM;
+            box-sizing:border-box;
+            background:$b;
+            box-shadow:$shadow;
+            position:relative;
+            float:left;
+
+            p:first-child{
+                font-size:$fM;
+                color:$w;
+                margin:0 0 $mS 0;
+            }
+
+            p:last-child{
+                font-size:$fS;
+                color:$w;
+            }
+
+            &::before{
+                content:'“';
+                position:absolute;
+                top:-20px;
+                left:-10px;
+                color:$y;
+                font-size:60px;
+                font-family:serif;
+            }
+
+            @media(max-width:$mobile){
+                width:100%;
+                height:auto;
+            }
+        }
+
+        article:nth-child(2){
+            margin:0 $mL;
+
+            @media(max-width:$tablette){
+                margin:0 $mM;
+            }
+
+            @media(max-width:$mobile){
+                margin:$mL 0;
+            }
+        }
+
+        @media(max-width:$tablette){
+            width:90%;
+            margin:$mXL auto 0 auto;
+        }
+
+        @media(max-width:$mobile){
+            flex-direction:column;
+            justify-content:center;
+            align-items:flex-start;
+        }
+    }
+
+    .footer{
+        width:90vw;
+        max-width:1000px;
+        margin:$mXL auto 0 auto;
+
+        p{
+            font-size:$fS;
+            color:$w;
+            margin:$mL 0 0 0;
+            text-align:center;
+        }
+    }
+}

@@ -1,0 +1,111 @@
+.activites {
+    width: 100%;
+    height: auto;
+    padding: $mL 0;
+    box-sizing: border-box;
+
+    h2 {
+        font-size: $fL;
+        text-align: center;
+        margin: 0 0 $mXL 0;
+        font-weight: $bold;
+    }
+
+    .margin {
+        width: 90vw;
+        max-width: 1000px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+
+        article {
+            width: calc(100% / 3 - 80px);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+
+            .picto {
+                background: $b;
+                border-radius: 100%;
+                transition: all 0.2s;
+                margin: auto;
+                width: 80%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 100%;
+                }
+
+                @media(max-width:$mobile) {
+                    width: 70%;
+                }
+            }
+
+            h3 {
+                font-size: $fM;
+                margin: $mM 0 $mS 0;
+                text-align: center;
+            }
+
+            p {
+                font-size: $fS;
+                color: $g;
+                text-align: center;
+                margin: 0 0 $mM 0;
+            }
+
+            a {
+                color: $bl;
+                font-size: $fS;
+                text-decoration: none;
+                background: $y;
+                padding: $mS $mM;
+                border-radius: 100px;
+                opacity: 0;
+
+                @media(max-width:$tablette) {
+                    opacity: 1;
+                }
+            }
+
+            &:hover {
+                .picto {
+                    border-radius: 0;
+                }
+
+                a {
+                    opacity: 1;
+                }
+            }
+
+            @media(max-width:$mobile) {
+                width: 50%;
+                margin: auto;
+            }
+        }
+
+        article:nth-child(2) {
+            margin: 0 $mL;
+
+            @media(max-width:$mobile) {
+                margin: $mXL auto;
+            }
+        }
+
+        @media(max-width:$tablette) {
+            width: 90%;
+            margin: auto;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        @media(max-width:$mobile) {
+            flex-direction: column;
+        }
+    }
+}

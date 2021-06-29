@@ -1,0 +1,246 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: "Lato", sans-serif; }
+
+header {
+  height: 100vh;
+  width: auto;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-shadow: 2px 0 10px 0 rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  box-sizing: border-box; }
+  header > a img {
+    margin: 10px; }
+  header nav ul {
+    margin: auto;
+    list-style: none; }
+    header nav ul li img {
+      margin: 10px; }
+
+main {
+  height: auto;
+  width: calc(100% - 60px);
+  float: right;
+  background: white; }
+  main strong {
+    font-weight: 300; }
+  main .intro {
+    width: 100%;
+    height: auto;
+    background-image: url("../img/background-header.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    padding: 80px 0;
+    box-sizing: border-box; }
+    main .intro .margin {
+      width: 90%;
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      main .intro .margin article {
+        width: 50%; }
+      main .intro .margin article:first-child h1 {
+        color: white;
+        font-size: 40px;
+        font-weight: 700; }
+      main .intro .margin article:first-child h2 {
+        color: white;
+        font-size: 24px;
+        font-weight: 300;
+        margin: 0 0 40px 0; }
+      main .intro .margin article:first-child a {
+        color: black;
+        font-size: 14px;
+        text-decoration: none;
+        background: #FFCA00;
+        padding: 10px 20px;
+        border-radius: 100px; }
+      @media (max-width: 1000px) {
+        main .intro .margin article:first-child {
+          width: 60%; } }
+      @media (max-width: 800px) {
+        main .intro .margin article:first-child {
+          width: 90%;
+          margin: auto; } }
+      main .intro .margin article:last-child img {
+        width: 100%; }
+      @media (max-width: 1000px) {
+        main .intro .margin article:last-child {
+          width: 40%; } }
+      @media (max-width: 800px) {
+        main .intro .margin article:last-child {
+          display: none; } }
+      @media (max-width: 1000px) {
+        main .intro .margin {
+          width: 90%;
+          margin: auto; } }
+  main .activites {
+    width: 100%;
+    height: auto;
+    padding: 40px 0;
+    box-sizing: border-box; }
+    main .activites h2 {
+      font-size: 30px;
+      text-align: center;
+      margin: 0 0 80px 0;
+      font-weight: 700; }
+    main .activites .margin {
+      width: 90vw;
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch; }
+      main .activites .margin article {
+        width: calc(100% / 3 - 80px);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center; }
+        main .activites .margin article .picto {
+          background: rgba(0, 157, 213, 0.1);
+          border-radius: 100%;
+          transition: all 0.2s;
+          margin: auto;
+          width: 80%;
+          height: auto;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          main .activites .margin article .picto img {
+            width: 100%; }
+          @media (max-width: 800px) {
+            main .activites .margin article .picto {
+              width: 70%; } }
+        main .activites .margin article h3 {
+          font-size: 24px;
+          margin: 20px 0 10px 0;
+          text-align: center; }
+        main .activites .margin article p {
+          font-size: 14px;
+          color: #737373;
+          text-align: center;
+          margin: 0 0 20px 0; }
+        main .activites .margin article a {
+          color: black;
+          font-size: 14px;
+          text-decoration: none;
+          background: #FFCA00;
+          padding: 10px 20px;
+          border-radius: 100px;
+          opacity: 0; }
+          @media (max-width: 1000px) {
+            main .activites .margin article a {
+              opacity: 1; } }
+        main .activites .margin article:hover .picto {
+          border-radius: 0; }
+        main .activites .margin article:hover a {
+          opacity: 1; }
+        @media (max-width: 800px) {
+          main .activites .margin article {
+            width: 50%;
+            margin: auto; } }
+      main .activites .margin article:nth-child(2) {
+        margin: 0 40px; }
+        @media (max-width: 800px) {
+          main .activites .margin article:nth-child(2) {
+            margin: 80px auto; } }
+      @media (max-width: 1000px) {
+        main .activites .margin {
+          width: 90%;
+          margin: auto;
+          justify-content: space-between;
+          align-items: flex-start; } }
+      @media (max-width: 800px) {
+        main .activites .margin {
+          flex-direction: column; } }
+  main .temoignages {
+    width: 100%;
+    height: auto;
+    background-image: url("../img/background-temoignages.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: 80px 0 20px 0;
+    box-sizing: border-box; }
+    main .temoignages h3 {
+      font-size: 30px;
+      color: white;
+      text-align: center; }
+    main .temoignages .margin {
+      width: 90vw;
+      max-width: 1000px;
+      margin: 40px auto 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch; }
+      main .temoignages .margin article {
+        width: calc(100% / 3);
+        height: auto;
+        padding: 20px;
+        box-sizing: border-box;
+        background: rgba(0, 157, 213, 0.1);
+        box-shadow: 2px 0 10px 0 rgba(0, 0, 0, 0.1);
+        position: relative;
+        float: left; }
+        main .temoignages .margin article p:first-child {
+          font-size: 24px;
+          color: white;
+          margin: 0 0 10px 0; }
+        main .temoignages .margin article p:last-child {
+          font-size: 14px;
+          color: white; }
+        main .temoignages .margin article::before {
+          content: '“';
+          position: absolute;
+          top: -20px;
+          left: -10px;
+          color: #FFCA00;
+          font-size: 60px;
+          font-family: serif; }
+        @media (max-width: 800px) {
+          main .temoignages .margin article {
+            width: 100%;
+            height: auto; } }
+      main .temoignages .margin article:nth-child(2) {
+        margin: 0 40px; }
+        @media (max-width: 1000px) {
+          main .temoignages .margin article:nth-child(2) {
+            margin: 0 20px; } }
+        @media (max-width: 800px) {
+          main .temoignages .margin article:nth-child(2) {
+            margin: 40px 0; } }
+      @media (max-width: 1000px) {
+        main .temoignages .margin {
+          width: 90%;
+          margin: 80px auto 0 auto; } }
+      @media (max-width: 800px) {
+        main .temoignages .margin {
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start; } }
+    main .temoignages .footer {
+      width: 90vw;
+      max-width: 1000px;
+      margin: 80px auto 0 auto; }
+      main .temoignages .footer p {
+        font-size: 14px;
+        color: white;
+        margin: 40px 0 0 0;
+        text-align: center; }
+
+/*# sourceMappingURL=style.css.map */
